@@ -1,0 +1,16 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Sample EC2 Instance Creation",
+    "Resources": {
+      "MyEC2Instance": {
+        "Type": "AWS::EC2::Instance",
+        "Properties": {
+          "InstanceType": "t2.micro",
+          "ImageId": "ami-0d3e89b21bfdcc33e", 
+          "KeyName": "TestCapstone-key",           
+          "SecurityGroups": ["default"]
+        }
+      }
+    }
+  }
+  
